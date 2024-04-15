@@ -1,11 +1,11 @@
 import 'package:bioskop_keren/common/state_enum.dart';
-import 'package:bioskop_keren/domain/entities/movie.dart';
-import 'package:bioskop_keren/domain/entities/movie_detail.dart';
-import 'package:bioskop_keren/domain/usecases/get_movie_detail.dart';
-import 'package:bioskop_keren/domain/usecases/get_movie_recommendations.dart';
-import 'package:bioskop_keren/domain/usecases/get_watchlist_status.dart';
-import 'package:bioskop_keren/domain/usecases/remove_watchlist.dart';
-import 'package:bioskop_keren/domain/usecases/save_watchlist.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie_detail.dart';
+import 'package:bioskop_keren/domain/movie/usecases/get_movie_detail.dart';
+import 'package:bioskop_keren/domain/movie/usecases/get_movie_recommendations.dart';
+import 'package:bioskop_keren/domain/movie/usecases/get_watchlist_status.dart';
+import 'package:bioskop_keren/domain/movie/usecases/remove_watchlist.dart';
+import 'package:bioskop_keren/domain/movie/usecases/save_watchlist.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

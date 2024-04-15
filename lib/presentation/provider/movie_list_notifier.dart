@@ -1,8 +1,8 @@
 import 'package:bioskop_keren/common/state_enum.dart';
-import 'package:bioskop_keren/domain/entities/movie.dart';
-import 'package:bioskop_keren/domain/usecases/get_now_playing_movies.dart';
-import 'package:bioskop_keren/domain/usecases/get_popular_movies.dart';
-import 'package:bioskop_keren/domain/usecases/get_top_rated_movies.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie.dart';
+import 'package:bioskop_keren/domain/movie/usecases/get_now_playing_movies.dart';
+import 'package:bioskop_keren/domain/movie/usecases/get_popular_movies.dart';
+import 'package:bioskop_keren/domain/movie/usecases/get_top_rated_movies.dart';
 import 'package:flutter/material.dart';
 
 class MovieListNotifier extends ChangeNotifier {

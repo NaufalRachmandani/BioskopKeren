@@ -1,5 +1,5 @@
 import 'package:bioskop_keren/common/constants.dart';
-import 'package:bioskop_keren/domain/entities/movie.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie.dart';
 import 'package:bioskop_keren/presentation/pages/movie_detail_page.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';

@@ -2,12 +2,12 @@ import 'dart:io';
 
 import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/common/failure.dart';
-import 'package:bioskop_keren/data/data_sources/movie_local_data_source.dart';
-import 'package:bioskop_keren/data/data_sources/movie_remote_data_source.dart';
-import 'package:bioskop_keren/data/models/movie_table.dart';
-import 'package:bioskop_keren/domain/entities/movie.dart';
-import 'package:bioskop_keren/domain/entities/movie_detail.dart';
-import 'package:bioskop_keren/domain/repositories/movie_repository.dart';
+import 'package:bioskop_keren/data/data_sources/movie/local/movie_local_data_source.dart';
+import 'package:bioskop_keren/data/data_sources/movie/remote/movie_remote_data_source.dart';
+import 'package:bioskop_keren/data/data_sources/movie/local/model/movie_table.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie_detail.dart';
+import 'package:bioskop_keren/domain/movie/repositories/movie_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class MovieRepositoryImpl implements MovieRepository {

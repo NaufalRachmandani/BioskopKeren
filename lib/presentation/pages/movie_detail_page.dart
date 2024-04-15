@@ -1,8 +1,8 @@
 import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/state_enum.dart';
-import 'package:bioskop_keren/domain/entities/genre.dart';
-import 'package:bioskop_keren/domain/entities/movie.dart';
-import 'package:bioskop_keren/domain/entities/movie_detail.dart';
+import 'package:bioskop_keren/domain/movie/entities/genre.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie.dart';
+import 'package:bioskop_keren/domain/movie/entities/movie_detail.dart';
 import 'package:bioskop_keren/presentation/provider/movie_detail_notifier.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +13,7 @@ class MovieDetailPage extends StatefulWidget {
   static const ROUTE_NAME = '/detail';
 
   final int id;
+
   MovieDetailPage({required this.id});
 
   @override
