@@ -16,9 +16,7 @@ class DatabaseHelper {
   static Database? _database;
 
   Future<Database?> get database async {
-    if (_database == null) {
-      _database = await _initDb();
-    }
+    _database ??= await _initDb();
     return _database;
   }
 
@@ -29,7 +27,7 @@ class DatabaseHelper {
     final path = await getDatabasesPath();
     final databasePath = '$path/bioskopkeren.db';
 
-    var db = await openDatabase(databasePath, version: 1, onCreate: _onCreate);
+    var db = await openDatabase(databasePath, version: 2, onCreate: _onCreate);
     return db;
   }
 
@@ -46,7 +44,7 @@ class DatabaseHelper {
     await db.execute('''
       CREATE TABLE  $_tblWatchlistTv (
         id INTEGER PRIMARY KEY,
-        title TEXT,
+        name TEXT,
         overview TEXT,
         posterPath TEXT
       );
