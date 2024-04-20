@@ -24,6 +24,7 @@ import 'package:bioskop_keren/presentation/provider/top_rated_movies_notifier.da
 import 'package:bioskop_keren/presentation/provider/top_rated_tv_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_detail_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_list_notifier.dart';
+import 'package:bioskop_keren/presentation/provider/tv_search_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/watchlist_movie_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/watchlist_tv_notifier.dart';
 import 'package:flutter/cupertino.dart';
@@ -38,6 +39,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -56,6 +59,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => di.locator<MovieSearchNotifier>(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => di.locator<TvSearchNotifier>(),
         ),
         ChangeNotifierProvider(
           create: (_) => di.locator<NowPlayingMoviesNotifier>(),
