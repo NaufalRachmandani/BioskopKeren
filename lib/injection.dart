@@ -33,6 +33,7 @@ import 'package:bioskop_keren/presentation/provider/top_rated_tv_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_detail_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_list_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/watchlist_movie_notifier.dart';
+import 'package:bioskop_keren/presentation/provider/watchlist_tv_notifier.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
 
@@ -118,6 +119,11 @@ void init() {
   locator.registerFactory(
     () => WatchlistMovieNotifier(
       getWatchlistMovies: locator(),
+    ),
+  );
+  locator.registerFactory(
+    () => WatchlistTvNotifier(
+      getWatchlistTvUseCase: locator(),
     ),
   );
 

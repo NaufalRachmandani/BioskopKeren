@@ -12,6 +12,7 @@ import 'package:bioskop_keren/presentation/pages/top_rated_movies_page.dart';
 import 'package:bioskop_keren/presentation/pages/top_rated_tv_page.dart';
 import 'package:bioskop_keren/presentation/pages/tv_detail_page.dart';
 import 'package:bioskop_keren/presentation/pages/watchlist_movies_page.dart';
+import 'package:bioskop_keren/presentation/pages/watchlist_tv_page.dart';
 import 'package:bioskop_keren/presentation/provider/movie_detail_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/movie_list_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/movie_search_notifier.dart';
@@ -24,6 +25,7 @@ import 'package:bioskop_keren/presentation/provider/top_rated_tv_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_detail_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_list_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/watchlist_movie_notifier.dart';
+import 'package:bioskop_keren/presentation/provider/watchlist_tv_notifier.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -76,9 +78,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (_) => di.locator<WatchlistMovieNotifier>(),
         ),
+        ChangeNotifierProvider(
+          create: (_) => di.locator<WatchlistTvNotifier>(),
+        ),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'BioskopKeren',
         theme: ThemeData.dark().copyWith(
           colorScheme: kColorScheme,
           primaryColor: kRichBlack,
@@ -119,6 +124,8 @@ class MyApp extends StatelessWidget {
               return CupertinoPageRoute(builder: (_) => SearchPage());
             case WatchlistMoviesPage.ROUTE_NAME:
               return MaterialPageRoute(builder: (_) => WatchlistMoviesPage());
+            case WatchlistTvPage.ROUTE_NAME:
+              return MaterialPageRoute(builder: (_) => WatchlistTvPage());
             case AboutPage.ROUTE_NAME:
               return MaterialPageRoute(builder: (_) => AboutPage());
             default:
