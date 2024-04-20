@@ -106,9 +106,9 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _nowPlaying(),
-              const SizedBox(height: 16),
+              const SizedBox(height: 24),
               _popular(),
-              const SizedBox(height: 16),
+              const SizedBox(height: 24),
               _topRated(),
             ],
           ),
