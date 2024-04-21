@@ -1,4 +1,5 @@
 import 'package:bioskop_keren/common/constants.dart';
+import 'package:bioskop_keren/data/common/base_url.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/presentation/pages/tv_detail_page.dart';
 import 'package:cached_network_image/cached_network_image.dart';

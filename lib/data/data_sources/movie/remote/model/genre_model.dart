@@ -2,7 +2,7 @@ import 'package:bioskop_keren/domain/movie/entities/genre.dart';
 import 'package:equatable/equatable.dart';
 
 class GenreModel extends Equatable {
-  GenreModel({
+  const GenreModel({
     required this.id,
     required this.name,
   });

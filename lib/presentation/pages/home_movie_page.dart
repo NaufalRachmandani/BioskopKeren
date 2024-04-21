@@ -1,5 +1,6 @@
 import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/state_enum.dart';
+import 'package:bioskop_keren/data/common/base_url.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/presentation/pages/movie_detail_page.dart';
