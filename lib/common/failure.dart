@@ -1,37 +1,22 @@
-abstract class Failure {
-  final String? message;
+import 'package:equatable/equatable.dart';
+
+abstract class Failure extends Equatable {
+  final String message;
 
   const Failure(this.message);
+
+  @override
+  List<Object> get props => [message];
 }
 
 class ServerFailure extends Failure {
-  ServerFailure(String message) : super(message);
-}
-
-class ConnectionTimeoutFailure extends Failure {
-  ConnectionTimeoutFailure(String? message) : super(message);
+  const ServerFailure(super.message);
 }
 
 class ConnectionFailure extends Failure {
-  ConnectionFailure(String? message) : super(message);
-}
-
-class BadCertificateFailure extends Failure {
-  BadCertificateFailure(String? message) : super(message);
-}
-
-class BadResponseFailure extends Failure {
-  BadResponseFailure(String? message) : super(message);
-}
-
-class CancelFailure extends Failure {
-  CancelFailure(String? message) : super(message);
+  const ConnectionFailure(super.message);
 }
 
 class DatabaseFailure extends Failure {
-  DatabaseFailure(String? message) : super(message);
-}
-
-class UnknownFailure extends Failure {
-  UnknownFailure(String? message) : super(message);
+  const DatabaseFailure(super.message);
 }

@@ -6,9 +6,9 @@ import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_series_table.d
 import 'package:bioskop_keren/data/data_sources/tv/local/tv_local_data_source.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/tv_remote_data_source.dart';
-import 'package:bioskop_keren/domain/tv/repositories/tv_repository.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart';
+import 'package:bioskop_keren/domain/tv/repositories/tv_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class TvRepositoryImpl implements TvRepository {
@@ -26,9 +26,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.getNowPlayingTvs();
       return Right(result.map((model) => model.toEntity()).toList());
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 
@@ -38,9 +38,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.getPopularTvs();
       return Right(result.map((model) => model.toEntity()).toList());
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 
@@ -50,9 +50,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.getTopRatedTvs();
       return Right(result.map((model) => model.toEntity()).toList());
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 
@@ -68,9 +68,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.getTvDetail(id);
       return Right(result.toEntity());
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 
@@ -80,9 +80,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.getTvRecommendation(id);
       return Right(result.map((model) => model.toEntity()).toList());
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 
@@ -95,9 +95,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.getTvSeasonDetail(id, seasonNumber);
       return Right(result);
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 
@@ -137,9 +137,9 @@ class TvRepositoryImpl implements TvRepository {
       final result = await remoteDataSource.searchTvs(query);
       return Right(result.map((model) => model.toEntity()).toList());
     } on ServerException {
-      return Left(ServerFailure(''));
+      return const Left(ServerFailure(''));
     } on SocketException {
-      return Left(ConnectionFailure('Failed to connect to the network'));
+      return const Left(ConnectionFailure('Failed to connect to the network'));
     }
   }
 }
