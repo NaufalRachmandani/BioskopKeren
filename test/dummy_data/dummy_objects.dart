@@ -1,7 +1,21 @@
 import 'package:bioskop_keren/data/data_sources/movie/local/model/movie_table.dart';
+import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_table.dart';
+import 'package:bioskop_keren/data/data_sources/tv/remote/model/episode_model.dart';
+import 'package:bioskop_keren/data/data_sources/tv/remote/model/genre_model.dart'
+    as GenreModelTV;
+import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_detail_model.dart';
+import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_model.dart';
+import 'package:bioskop_keren/data/data_sources/tv/remote/model/tv_detail_model.dart';
+import 'package:bioskop_keren/data/data_sources/tv/remote/model/tv_model.dart';
 import 'package:bioskop_keren/domain/movie/entities/genre.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie_detail.dart';
+import 'package:bioskop_keren/domain/tv/entities/genre.dart' as GenreTV;
+import 'package:bioskop_keren/domain/tv/entities/season.dart';
+import 'package:bioskop_keren/domain/tv/entities/tv.dart';
+import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart';
+
+// MOVIE Section
 
 const testMovie = Movie(
   adult: false,
@@ -57,3 +71,165 @@ final testMovieMap = {
   'posterPath': 'posterPath',
   'title': 'title',
 };
+
+// TV Section
+
+const testTv = Tv(
+  posterPath: "posterPath",
+  popularity: 1,
+  id: 1,
+  backdropPath: "backdropPath",
+  voteAverage: 1,
+  overview: "overview",
+  firstAirDate: "firstAirDate",
+  originCountry: ["id"],
+  genreIds: [1],
+  originalLanguage: "originalLanguage",
+  voteCount: 1,
+  name: "name",
+  originalName: "originalName",
+);
+
+const testTvModel = TvModel(
+  posterPath: 'posterPath',
+  popularity: 1,
+  id: 1,
+  backdropPath: 'backdropPath',
+  voteAverage: 1,
+  overview: 'overview',
+  firstAirDate: "firstAirDate",
+  originCountry: ["id"],
+  genreIds: [1],
+  originalLanguage: "originalLanguage",
+  voteCount: 1,
+  name: "name",
+  originalName: "originalName",
+);
+
+final testTvList = [testTv];
+final testTvModelList = [testTvModel];
+
+const tvSeason = Season(
+  airDate: "airDate",
+  episodeCount: 1,
+  id: 1,
+  name: "name",
+  overview: "overview",
+  posterPath: "posterPath",
+  seasonNumber: 1,
+);
+
+const tvSeasonModel = SeasonModel(
+  airDate: "airDate",
+  episodeCount: 1,
+  id: 1,
+  name: "name",
+  overview: "overview",
+  posterPath: "posterPath",
+  seasonNumber: 1,
+);
+
+const testTvDetailResponse = TvDetailResponse(
+  backdropPath: "backdropPath",
+  firstAirDate: "firstAirDate",
+  genres: [GenreModelTV.GenreModel(id: 1, name: 'Action')],
+  homepage: "homepage",
+  id: 1,
+  inProduction: true,
+  languages: ["languages"],
+  lastAirDate: "lastAirDate",
+  name: "name",
+  numberOfEpisodes: 1,
+  numberOfSeasons: 1,
+  originCountry: ["originCountry"],
+  originalLanguage: "originalLanguage",
+  originalName: "originalName",
+  overview: "overview",
+  popularity: 1,
+  posterPath: "posterPath",
+  seasons: [tvSeasonModel],
+  status: "status",
+  tagline: "tagline",
+  type: "type",
+  voteAverage: 1,
+  voteCount: 1,
+);
+
+const testTvDetail = TvDetail(
+  backdropPath: "backdropPath",
+  firstAirDate: "firstAirDate",
+  genres: [GenreTV.Genre(id: 1, name: 'Action')],
+  id: 1,
+  lastAirDate: "lastAirDate",
+  name: "name",
+  numberOfEpisodes: 1,
+  numberOfSeasons: 1,
+  overview: "overview",
+  posterPath: "posterPath",
+  seasons: [tvSeason],
+  status: "status",
+  tagline: "tagline",
+  type: "type",
+  voteAverage: 1,
+  voteCount: 1,
+);
+
+const testWatchlistTv = Tv.watchlist(
+  id: 1,
+  name: "name",
+  posterPath: 'posterPath',
+  overview: 'overview',
+);
+
+const testTvTable = TvTable(
+  id: 1,
+  name: 'name',
+  posterPath: 'posterPath',
+  overview: 'overview',
+);
+
+const testTvWatchlist = Tv(
+  id: 1,
+  name: 'name',
+  posterPath: 'posterPath',
+  overview: 'overview',
+  popularity: null,
+  backdropPath: null,
+  voteAverage: null,
+  firstAirDate: null,
+  originCountry: null,
+  genreIds: null,
+  originalLanguage: null,
+  voteCount: null,
+  originalName: null,
+);
+
+final testTvMap = {
+  'id': 1,
+  'overview': 'overview',
+  'posterPath': 'posterPath',
+  'name': 'name',
+};
+
+const testEpisodeModel = EpisodeModel(
+  airDate: "airDate",
+  episodeNumber: 1,
+  id: 1,
+  name: "name",
+  overview: "overview",
+  productionCode: "productionCode",
+  seasonNumber: 1,
+  stillPath: "stillPath",
+  voteAverage: 1,
+  voteCount: 1,
+);
+
+const testSeasonDetailResponse = SeasonDetailResponse(
+  id: 1,
+  airDate: "airDate",
+  episodes: [testEpisodeModel],
+  name: "name",
+  overview: "overview",
+  posterPath: "posterPath",
+  seasonNumber: 1,
+);

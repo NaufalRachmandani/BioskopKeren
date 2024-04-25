@@ -1,0 +1,57 @@
+{
+  "_id": "60cc9106761421005701708e",
+  "air_date": "2019-10-28",
+  "episodes": [
+    {
+      "air_date": "2019-10-28",
+      "episode_number": 1,
+      "episode_type": "standard",
+      "id": 4028510,
+      "name": "Hazbin Hotel (Pilot)",
+      "overview": "Follow",
+      "production_code": "",
+      "runtime": 32,
+      "season_number": 0,
+      "show_id": 94954,
+      "still_path": "/nYqYIMaeYbop2zpbnqHAe45Aahm.jpg",
+      "vote_average": 8.1,
+      "vote_count": 6,
+      "crew": [
+        {
+          "job": "Director",
+          "department": "Directing",
+          "credit_id": "6515dbf7a199a600c49cb179",
+          "adult": false,
+          "gender": 1,
+          "id": 1754390,
+          "known_for_department": "Directing",
+          "name": "Vivienne Medrano",
+          "original_name": "Vivienne Medrano",
+          "popularity": 7.347,
+          "profile_path": "/xFFXWvSnEXYur4ZKgVYuGWrGEvS.jpg"
+        }
+      ],
+      "guest_stars": [
+        {
+          "character": "Vaggie (voice)",
+          "credit_id": "5f4d80c965e0a2003451bc66",
+          "order": 500,
+          "adult": false,
+          "gender": 1,
+          "id": 2443143,
+          "known_for_department": "Acting",
+          "name": "Monica Franco",
+          "original_name": "Monica Franco",
+          "popularity": 3.302,
+          "profile_path": "profile_path"
+        }
+      ]
+    }
+  ],
+  "name": "Specials",
+  "overview": "",
+  "id": 199540,
+  "poster_path": "/aYApV2vAn2bvY8HbkXHGbmG6FYS.jpg",
+  "season_number": 0,
+  "vote_average": 0
+}

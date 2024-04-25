@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/common/failure.dart';
-import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_series_table.dart';
+import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_table.dart';
 import 'package:bioskop_keren/data/data_sources/tv/local/tv_local_data_source.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/tv_remote_data_source.dart';

@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:bioskop_keren/data/data_sources/movie/local/model/movie_table.dart';
-import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_series_table.dart';
+import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_table.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DatabaseHelper {

@@ -1,6 +1,6 @@
 import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/data/data_sources/db/database_helper.dart';
-import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_series_table.dart';
+import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_table.dart';
 
 abstract class TvLocalDataSource {
   Future<String> insertWatchlist(TvTable tv);
