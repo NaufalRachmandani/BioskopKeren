@@ -4,8 +4,8 @@ import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/common/failure.dart';
 import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_table.dart';
 import 'package:bioskop_keren/data/data_sources/tv/local/tv_local_data_source.dart';
-import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/tv_remote_data_source.dart';
+import 'package:bioskop_keren/domain/tv/entities/season_detail.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart';
 import 'package:bioskop_keren/domain/tv/repositories/tv_repository.dart';
@@ -87,13 +87,13 @@ class TvRepositoryImpl implements TvRepository {
   }
 
   @override
-  Future<Either<Failure, SeasonDetailResponse>> getTvSeasonDetail(
+  Future<Either<Failure, SeasonDetail>> getTvSeasonDetail(
     int id,
     int seasonNumber,
   ) async {
     try {
       final result = await remoteDataSource.getTvSeasonDetail(id, seasonNumber);
-      return Right(result);
+      return Right(result.toEntity());
     } on ServerException {
       return const Left(ServerFailure(''));
     } on SocketException {

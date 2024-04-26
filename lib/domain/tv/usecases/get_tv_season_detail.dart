@@ -1,5 +1,5 @@
 import 'package:bioskop_keren/common/failure.dart';
-import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_detail_model.dart';
+import 'package:bioskop_keren/domain/tv/entities/season_detail.dart';
 import 'package:bioskop_keren/domain/tv/repositories/tv_repository.dart';
 import 'package:dartz/dartz.dart';
 
@@ -8,7 +8,7 @@ class GetTvSeasonDetail {
 
   GetTvSeasonDetail(this.repository);
 
-  Future<Either<Failure, SeasonDetailResponse>> execute(
+  Future<Either<Failure, SeasonDetail>> execute(
     int id,
     int seasonNumber,
   ) {

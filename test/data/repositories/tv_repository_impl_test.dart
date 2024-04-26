@@ -253,7 +253,7 @@ void main() {
       final result = await repository.getTvSeasonDetail(tId, tSeasonNumber);
       // assert
       verify(mockRemoteDataSource.getTvSeasonDetail(tId, tSeasonNumber));
-      expect(result, equals(const Right(testSeasonDetailResponse)));
+      expect(result, equals(Right(testSeasonDetailResponse.toEntity())));
     });
 
     test(

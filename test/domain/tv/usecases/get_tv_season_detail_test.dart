@@ -21,10 +21,10 @@ void main() {
   test('should get tv season detail from the repository', () async {
     // arrange
     when(mockTvRepository.getTvSeasonDetail(tId, tSeasonNumber))
-        .thenAnswer((_) async => const Right(testSeasonDetailResponse));
+        .thenAnswer((_) async => Right(testSeasonDetailResponse.toEntity()));
     // act
     final result = await usecase.execute(tId, tSeasonNumber);
     // assert
-    expect(result, const Right(testSeasonDetailResponse));
+    expect(result, Right(testSeasonDetailResponse.toEntity()));
   });
 }
