@@ -1,4 +1,3 @@
-import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/data/common/base_url.dart';
 import 'package:bioskop_keren/domain/tv/entities/genre.dart';
@@ -7,6 +6,8 @@ import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart';
 import 'package:bioskop_keren/presentation/provider/tv_detail_notifier.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:core/styles/colors.dart';
+import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';

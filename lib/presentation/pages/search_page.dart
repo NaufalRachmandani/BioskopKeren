@@ -1,9 +1,9 @@
-import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/presentation/provider/movie_search_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_search_notifier.dart';
 import 'package:bioskop_keren/presentation/widgets/movie_card_list.dart';
 import 'package:bioskop_keren/presentation/widgets/tv_card_list.dart';
+import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

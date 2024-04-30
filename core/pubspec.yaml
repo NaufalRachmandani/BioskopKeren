@@ -1,4 +1,4 @@
-name: about
+name: core
 description: "A new Flutter package project."
 version: 0.0.1
 homepage:
@@ -11,8 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  core:
-    path: ../core
+  equatable: ^2.0.5
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:

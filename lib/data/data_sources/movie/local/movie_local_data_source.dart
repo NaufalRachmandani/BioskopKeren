@@ -4,8 +4,11 @@ import 'package:bioskop_keren/data/data_sources/movie/local/model/movie_table.da
 
 abstract class MovieLocalDataSource {
   Future<String> insertWatchlist(MovieTable movie);
+
   Future<String> removeWatchlist(MovieTable movie);
+
   Future<MovieTable?> getMovieById(int id);
+
   Future<List<MovieTable>> getWatchlistMovies();
 }
 

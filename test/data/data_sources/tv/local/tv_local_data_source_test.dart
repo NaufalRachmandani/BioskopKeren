@@ -1,8 +1,8 @@
-import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/data/data_sources/tv/local/tv_local_data_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
+import '../../../../../core/lib/utils/exception.dart';
 import '../../../../dummy_data/dummy_objects.dart';
 import '../../../../helpers/test_helper.mocks.dart';
 

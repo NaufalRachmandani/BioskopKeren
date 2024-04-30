@@ -1,5 +1,4 @@
 import 'package:about/about_page.dart';
-import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/utils.dart';
 import 'package:bioskop_keren/presentation/pages/home_movie_page.dart';
 import 'package:bioskop_keren/presentation/pages/movie_detail_page.dart';
@@ -27,6 +26,8 @@ import 'package:bioskop_keren/presentation/provider/tv_list_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/tv_search_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/watchlist_movie_notifier.dart';
 import 'package:bioskop_keren/presentation/provider/watchlist_tv_notifier.dart';
+import 'package:core/styles/colors.dart';
+import 'package:core/styles/text_styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

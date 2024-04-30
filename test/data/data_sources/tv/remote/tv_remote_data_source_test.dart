@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/model/season_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/model/tv_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/model/tv_response.dart';
@@ -9,6 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
 
+import '../../../../../core/lib/utils/exception.dart';
 import '../../../../helpers/test_helper.mocks.dart';
 import '../../../../json_reader.dart';
 
