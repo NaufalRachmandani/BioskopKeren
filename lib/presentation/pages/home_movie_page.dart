@@ -1,3 +1,4 @@
+import 'package:about/about_page.dart';
 import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/data/common/base_url.dart';
@@ -19,8 +20,6 @@ import 'package:bioskop_keren/presentation/provider/tv_list_notifier.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'about_page.dart';
 
 class HomeMoviePage extends StatefulWidget {
   @override

@@ -1,6 +1,6 @@
+import 'package:about/about_page.dart';
 import 'package:bioskop_keren/common/constants.dart';
 import 'package:bioskop_keren/common/utils.dart';
-import 'package:bioskop_keren/presentation/pages/about_page.dart';
 import 'package:bioskop_keren/presentation/pages/home_movie_page.dart';
 import 'package:bioskop_keren/presentation/pages/movie_detail_page.dart';
 import 'package:bioskop_keren/presentation/pages/now_playing_movies_page.dart';
