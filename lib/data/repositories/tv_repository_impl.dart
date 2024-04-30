@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'package:bioskop_keren/common/exception.dart';
-import 'package:bioskop_keren/common/failure.dart';
 import 'package:bioskop_keren/data/data_sources/tv/local/model/tv_table.dart';
 import 'package:bioskop_keren/data/data_sources/tv/local/tv_local_data_source.dart';
 import 'package:bioskop_keren/data/data_sources/tv/remote/tv_remote_data_source.dart';
@@ -9,6 +7,8 @@ import 'package:bioskop_keren/domain/tv/entities/season_detail.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart';
 import 'package:bioskop_keren/domain/tv/repositories/tv_repository.dart';
+import 'package:core/utils/exception.dart';
+import 'package:core/utils/failure.dart';
 import 'package:dartz/dartz.dart';
 
 class TvRepositoryImpl implements TvRepository {

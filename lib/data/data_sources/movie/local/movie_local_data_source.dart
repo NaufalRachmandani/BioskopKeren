@@ -1,6 +1,6 @@
-import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/data/data_sources/db/database_helper.dart';
 import 'package:bioskop_keren/data/data_sources/movie/local/model/movie_table.dart';
+import 'package:core/utils/exception.dart';
 
 abstract class MovieLocalDataSource {
   Future<String> insertWatchlist(MovieTable movie);

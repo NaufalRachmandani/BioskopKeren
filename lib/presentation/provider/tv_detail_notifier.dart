@@ -1,4 +1,3 @@
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart';
 import 'package:bioskop_keren/domain/tv/usecases/get_tv_by_id.dart';
@@ -6,6 +5,7 @@ import 'package:bioskop_keren/domain/tv/usecases/get_tv_detail.dart';
 import 'package:bioskop_keren/domain/tv/usecases/get_tv_recommendations.dart';
 import 'package:bioskop_keren/domain/tv/usecases/insert_watchlist_tv.dart';
 import 'package:bioskop_keren/domain/tv/usecases/remove_watchlist_tv.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

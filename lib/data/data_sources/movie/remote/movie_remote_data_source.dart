@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:bioskop_keren/common/exception.dart';
 import 'package:bioskop_keren/data/common/base_url.dart';
 import 'package:bioskop_keren/data/data_sources/movie/remote/model/movie_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/movie/remote/model/movie_model.dart';
 import 'package:bioskop_keren/data/data_sources/movie/remote/model/movie_response.dart';
+import 'package:core/utils/exception.dart';
 import 'package:http/http.dart' as http;
 
 abstract class MovieRemoteDataSource {

@@ -1,6 +1,6 @@
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie.dart';
 import 'package:bioskop_keren/domain/movie/usecases/get_watchlist_movies.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:flutter/foundation.dart';
 
 class WatchlistMovieNotifier extends ChangeNotifier {

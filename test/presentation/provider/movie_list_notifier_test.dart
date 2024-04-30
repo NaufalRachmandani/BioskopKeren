@@ -1,10 +1,10 @@
-import 'package:bioskop_keren/common/failure.dart';
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie.dart';
 import 'package:bioskop_keren/domain/movie/usecases/get_now_playing_movies.dart';
 import 'package:bioskop_keren/domain/movie/usecases/get_popular_movies.dart';
 import 'package:bioskop_keren/domain/movie/usecases/get_top_rated_movies.dart';
 import 'package:bioskop_keren/presentation/provider/movie_list_notifier.dart';
+import 'package:core/utils/failure.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';

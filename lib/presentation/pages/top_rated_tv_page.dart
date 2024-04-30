@@ -1,6 +1,6 @@
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/presentation/provider/top_rated_tv_notifier.dart';
 import 'package:bioskop_keren/presentation/widgets/tv_card_list.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,4 +1,3 @@
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie_detail.dart';
 import 'package:bioskop_keren/domain/movie/usecases/get_movie_detail.dart';
@@ -6,6 +5,7 @@ import 'package:bioskop_keren/domain/movie/usecases/get_movie_recommendations.da
 import 'package:bioskop_keren/domain/movie/usecases/get_watchlist_status.dart';
 import 'package:bioskop_keren/domain/movie/usecases/remove_watchlist.dart';
 import 'package:bioskop_keren/domain/movie/usecases/save_watchlist.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -28,21 +28,27 @@ class MovieDetailNotifier extends ChangeNotifier {
   });
 
   late MovieDetail _movie;
+
   MovieDetail get movie => _movie;
 
   RequestState _movieState = RequestState.Empty;
+
   RequestState get movieState => _movieState;
 
   List<Movie> _movieRecommendations = [];
+
   List<Movie> get movieRecommendations => _movieRecommendations;
 
   RequestState _recommendationState = RequestState.Empty;
+
   RequestState get recommendationState => _recommendationState;
 
   String _message = '';
+
   String get message => _message;
 
   bool _isAddedtoWatchlist = false;
+
   bool get isAddedToWatchlist => _isAddedtoWatchlist;
 
   Future<void> fetchMovieDetail(int id) async {
@@ -77,6 +83,7 @@ class MovieDetailNotifier extends ChangeNotifier {
   }
 
   String _watchlistMessage = '';
+
   String get watchlistMessage => _watchlistMessage;
 
   Future<void> addWatchlist(MovieDetail movie) async {

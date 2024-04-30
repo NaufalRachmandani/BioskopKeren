@@ -7,7 +7,6 @@ import 'dart:async' as _i8;
 import 'dart:convert' as _i27;
 import 'dart:typed_data' as _i28;
 
-import 'package:bioskop_keren/common/failure.dart' as _i9;
 import 'package:bioskop_keren/data/data_sources/db/database_helper.dart'
     as _i25;
 import 'package:bioskop_keren/data/data_sources/movie/local/model/movie_table.dart'
@@ -41,6 +40,7 @@ import 'package:bioskop_keren/domain/tv/entities/tv.dart' as _i13;
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart' as _i14;
 import 'package:bioskop_keren/domain/tv/repositories/tv_repository.dart'
     as _i12;
+import 'package:core/utils/failure.dart' as _i9;
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:http/http.dart' as _i6;
 import 'package:mockito/mockito.dart' as _i1;

@@ -1,16 +1,16 @@
 import 'dart:io';
 
-import 'package:bioskop_keren/common/failure.dart';
 import 'package:bioskop_keren/data/data_sources/movie/remote/model/genre_model.dart';
 import 'package:bioskop_keren/data/data_sources/movie/remote/model/movie_detail_model.dart';
 import 'package:bioskop_keren/data/data_sources/movie/remote/model/movie_model.dart';
 import 'package:bioskop_keren/data/repositories/movie_repository_impl.dart';
 import 'package:bioskop_keren/domain/movie/entities/movie.dart';
+import 'package:core/utils/exception.dart';
+import 'package:core/utils/failure.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
-import '../../../core/lib/utils/exception.dart';
 import '../../dummy_data/dummy_objects.dart';
 import '../../helpers/test_helper.mocks.dart';
 

@@ -6,7 +6,6 @@
 import 'dart:async' as _i12;
 import 'dart:ui' as _i13;
 
-import 'package:bioskop_keren/common/state_enum.dart' as _i9;
 import 'package:bioskop_keren/domain/tv/entities/tv.dart' as _i10;
 import 'package:bioskop_keren/domain/tv/entities/tv_detail.dart' as _i7;
 import 'package:bioskop_keren/domain/tv/usecases/get_tv_by_id.dart' as _i4;
@@ -19,6 +18,7 @@ import 'package:bioskop_keren/domain/tv/usecases/remove_watchlist_tv.dart'
     as _i6;
 import 'package:bioskop_keren/presentation/provider/tv_detail_notifier.dart'
     as _i8;
+import 'package:core/utils/state_enum.dart' as _i9;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:mockito/src/dummies.dart' as _i11;
 

@@ -1,6 +1,6 @@
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/domain/tv/entities/tv.dart';
 import 'package:bioskop_keren/domain/tv/usecases/get_now_playing_tvs.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:flutter/foundation.dart';
 
 class NowPlayingTvNotifier extends ChangeNotifier {

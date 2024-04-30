@@ -1,9 +1,9 @@
-import 'package:bioskop_keren/common/failure.dart';
-import 'package:bioskop_keren/common/state_enum.dart';
 import 'package:bioskop_keren/domain/tv/usecases/get_now_playing_tvs.dart';
 import 'package:bioskop_keren/domain/tv/usecases/get_popular_tvs.dart';
 import 'package:bioskop_keren/domain/tv/usecases/get_top_rated_tvs.dart';
 import 'package:bioskop_keren/presentation/provider/tv_list_notifier.dart';
+import 'package:core/utils/failure.dart';
+import 'package:core/utils/state_enum.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
