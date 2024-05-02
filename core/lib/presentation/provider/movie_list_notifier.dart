@@ -52,7 +52,7 @@ class MovieListNotifier extends ChangeNotifier {
     result.fold(
       (failure) {
         _nowPlayingState = RequestState.Error;
-        _message = failure.message ?? '';
+        _message = failure.message;
         notifyListeners();
       },
       (moviesData) {
